@@ -19,7 +19,7 @@
    
    US03: Como jogador, quero iniciar uma partida contra um jogador aleatório online, para que possa competir com desconhecidos a qualquer momento.
 
-3. Mecânicas de Jogo (Core Gameplay)
+2. Mecânicas de Jogo (Core Gameplay)
 
    US04: Como jogador, quero selecionar uma coordenada no tabuleiro adversário para disparar um míssil e tentar atingir um navio inimigo.
 
@@ -29,7 +29,7 @@
 
    US07: Como jogador, quero ver as regras do jogo.
 
-3 — Torneios (Grupo)
+3. Torneios (Grupo)
 
    US08: Como organizador, quero criar um torneio privado dando-lhe um nome e escolhendo o jogo, para que possa organizar competições com o meu grupo.
 
@@ -37,7 +37,7 @@
 
    US10: Como utilizador, quero consultar os meus torneios criados na página "Os meus torneios", para que possa gerir e acompanhar os torneios em curso.
 
-4 — Loja e Personalização
+4. Loja e Personalização
 
    US11: Como jogador, quero aceder à loja de avatares, para que possa ver os avatares disponíveis para compra.
 
@@ -45,11 +45,11 @@
 
    US13: Como jogador, quero aceder à loja de moedas virtuais, para que possa ver as opções de compra disponíveis.
 
-5 — Conta de Utilizador
+5. Conta de Utilizador
 
    US14: Como utilizador autenticado, quero terminar sessão na minha conta, para que os meus dados fiquem protegidos em dispositivos partilhados.
 
-6 — Histórico e Estatísticas
+6. Histórico e Estatísticas
 
    US15: Como jogador autenticado, quero consultar o meu histórico de partidas de Batalha Naval, para que possa analisar o meu desempenho ao longo do tempo.
    US16: Como jogador, quero consultar o daily leaderboard.
