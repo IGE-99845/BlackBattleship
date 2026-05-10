@@ -1,0 +1,373 @@
+{
+  "id": "d5f2a749-1c57-4ed4-b408-4d74f3d8ab4e",
+  "version": "2.0",
+  "name": "TestSuite_99328",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "1579eafa-07bd-4269-be01-5201afadfd41",
+    "name": "UserStoryTest1 ",
+    "commands": [{
+      "id": "0fb64238-7c0b-4ff9-b1c3-d08579f8502c",
+      "comment": "Abrir a página do Battleship",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c501edbd-7c55-455b-91b8-c213ec1513fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x928",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c0f960f-090b-4452-9a47-b17bffc00c62",
+      "comment": "Clicar em jogar contra um robot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b53c8426-1b79-407a-9835-c55968e65271",
+      "comment": "Aguardar pela tela do nickname",
+      "command": "waitForElementVisible",
+      "target": "css=.pt-4",
+      "targets": [
+        ["css=.pt-4", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section", "xpath:idRelative"],
+        ["xpath=//div/section", "xpath:position"],
+        ["xpath=//section[contains(.,'Please choose a respectful username')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a207e025-c2be-4946-adc0-fe9072dfc74f",
+      "comment": "Clicar para escrever o nickname",
+      "command": "click",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc6179f-df7a-474e-bf82-ad6a2284c96d",
+      "comment": "Escrever o nickname",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "347fb14c-c53d-4ed9-80ff-2466ac7c3319",
+      "comment": "Clicar em continuar",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d085837-45df-41d3-9eb3-d464d6aecbb8",
+      "comment": "Aguarda o tabuleiro carregar",
+      "command": "waitForElementVisible",
+      "target": "css=.scrollable-flex",
+      "targets": [
+        ["css=.scrollable-flex", "css:finder"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }, {
+    "id": "1a3fe3f1-31cd-497b-ad86-20ac2065444b",
+    "name": "UserStoryTest2",
+    "commands": [{
+      "id": "30dd3daf-7693-41c5-bbca-f24b215cf2f4",
+      "comment": "Abrir a página do Battleship",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f15436f9-2271-4309-8879-12d902df2516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "905x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c334f156-224f-45a3-9ca0-33c24166f999",
+      "comment": "Clicar em jogar com amigo",
+      "command": "click",
+      "target": "css=.w-100:nth-child(1) > .btn-lg .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ff4f36-ff4d-4308-8a01-b75c7885a11f",
+      "comment": "Aguardar pela tela do nickname",
+      "command": "waitForElementVisible",
+      "target": "css=.pt-4",
+      "targets": [
+        ["css=.pt-4", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section", "xpath:idRelative"],
+        ["xpath=//div/section", "xpath:position"],
+        ["xpath=//section[contains(.,'Please choose a respectful username')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "dc75a619-9e6a-4eb9-9eb3-ad28d206aff1",
+      "comment": "Clicar para escrever o nickname",
+      "command": "click",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "460bce76-6970-4649-928c-a2d2ed80d227",
+      "comment": "Escrever o nickname",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "82939e38-d2b6-47a0-9eb5-b7f74b2b11a1",
+      "comment": "Clicar em continuar",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd50b06-5099-45b9-978d-3224e77fab7c",
+      "comment": "Aguardar que o link/QR code apareça",
+      "command": "waitForElementVisible",
+      "target": "css=.p-3",
+      "targets": [
+        ["css=.p-3", "css:finder"],
+        ["xpath=//app-invite-friend", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }, {
+    "id": "68cdb3a4-d213-41da-8818-295b25d1438c",
+    "name": "UserStoryTest3",
+    "commands": [{
+      "id": "dd82ce3a-ff97-49b7-980a-d74b61c8358d",
+      "comment": "Abrir página do Battleship",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f55aaad-2a95-420a-9ba5-7a4c2a2fb565",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "905x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59a3c316-d90d-4abc-bde5-4e4b49375dd6",
+      "comment": "Clicar em jogar com um player online",
+      "command": "click",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9386b227-14d5-4f62-81f2-584f982a6b46",
+      "comment": "Aguardar pela tela do nickname",
+      "command": "waitForElementVisible",
+      "target": "css=.pt-4",
+      "targets": [
+        ["css=.pt-4", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section", "xpath:idRelative"],
+        ["xpath=//div/section", "xpath:position"],
+        ["xpath=//section[contains(.,'Please choose a respectful username')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e1de36fd-cb7d-4202-b5cc-2ca9037f3479",
+      "comment": "Clicar para escrever o nickname",
+      "command": "click",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95eee08e-9d95-447a-9625-c162bd506ee7",
+      "comment": "Escrever o nickname",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "b27981c6-c074-4848-b452-715da15d704e",
+      "comment": "Clicar em continuar",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "609b5171-c31e-4711-a44b-92d04becdc1e",
+      "comment": "Aguardar que o jogo carregue",
+      "command": "waitForElementVisible",
+      "target": "css=.scrollable-flex",
+      "targets": [
+        ["css=.scrollable-flex", "css:finder"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }, {
+    "id": "eade1935-7407-4742-8e9b-c1e9a534b72d",
+    "name": "UserStoryTest4",
+    "commands": [{
+      "id": "d761c5c3-37d5-4248-b869-e22e8b1c6d3f",
+      "comment": "Abrir página do Battleship",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acd769ef-be8f-428d-bb5f-2fa6978f28a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "905x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dc07bf1-7956-43c0-8291-c9e57b00ef13",
+      "comment": "Clicar em jogar contra robot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46da60c7-732d-42a2-b9c1-1da9986e43e4",
+      "comment": "Aguardar pela tela do nickname",
+      "command": "waitForElementVisible",
+      "target": "css=.pt-4",
+      "targets": [
+        ["css=.pt-4", "css:finder"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section", "xpath:idRelative"],
+        ["xpath=//div/section", "xpath:position"],
+        ["xpath=//section[contains(.,'Please choose a respectful username')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2a254feb-d8f0-43d5-a444-6c44b23675b4",
+      "comment": "Clicar para escrever o nickname",
+      "command": "click",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce462546-1926-4dfa-9d92-1256b18b9f2f",
+      "comment": "Escrever o nickname",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "84078b6b-7022-4ccf-a57d-76f0e78e5a63",
+      "comment": "Clicar em continuar",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c787dcf-474e-472d-80b3-0fd26627dd10",
+      "comment": "Selecionar uma coordenada no tabuleiro do adversário e disparar",
+      "command": "click",
+      "target": "css=div.opponent table.table-board td.cell-0-0",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2ad459b-0bb8-481a-8ce7-6ba776734baf",
+      "comment": "Aguarda para verificar que o tiro foi efetuado",
+      "command": "waitForElementVisible",
+      "target": "css=div.opponent table.table-board td.cell-0-0 svg",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "b011c7a4-5078-46c9-ba68-0c759e65fd65",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://papergames.io/", "https://papergames.io/en/battleship"],
+  "plugins": []
+}
