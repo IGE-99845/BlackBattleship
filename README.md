@@ -52,6 +52,7 @@
 6. Histórico e Estatísticas
 
    US15: Como jogador autenticado, quero consultar o meu histórico de partidas de Batalha Naval, para que possa analisar o meu desempenho ao longo do tempo.
+   
    US16: Como jogador, quero consultar o daily leaderboard.
 
 
