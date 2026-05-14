@@ -62,7 +62,7 @@ public class MainPageTest {
     public void toolsMenu() {
         mainPage.toolsMenu.click();
 
-        WebElement menuPopup = driver.findElement(By.cssSelector("[data-test='main-submenu-item-link']"));
+        WebElement menuPopup = driver.findElement(By.cssSelector("[data-test='main-submenu-column-title']"));
         assertTrue(menuPopup.isDisplayed());
     }
 
