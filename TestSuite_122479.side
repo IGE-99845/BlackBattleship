@@ -1,0 +1,213 @@
+{
+  "id": "98614c73-c241-4bc2-9e15-5803405835f2",
+  "version": "2.0",
+  "name": "TestSuite_122479",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "3b760047-3ef0-48da-892c-e4ffc16f2f44",
+    "name": "UserStoryTest13",
+    "commands": [{
+      "id": "853ddb4f-e974-45bf-95f8-648058de34c3",
+      "comment": "Abrir a página ",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85c10796-3c7c-456a-b25e-a82995039c47",
+      "comment": "Definir o tamanho da janela",
+      "command": "setWindowSize",
+      "target": "870x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5702141e-2471-4aed-882b-25049f1126c0",
+      "comment": "Carregar no icone do menu",
+      "command": "click",
+      "target": "xpath=//span/button/span[3]",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//span/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "950a8e74-8d28-4dec-a517-30f1f59b71ff",
+      "comment": "Carregar no icone da loja",
+      "command": "click",
+      "target": "linkText=Shop",
+      "targets": [
+        ["linkText=Shop", "linkText"],
+        ["css=.cdk-focused", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/shop')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shop')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e809091-7717-49d4-aab6-9f1c1b9f7e5d",
+      "comment": "Carregar no icone da loja de moedas",
+      "command": "click",
+      "target": "linkText=Coins",
+      "targets": [
+        ["linkText=Coins", "linkText"],
+        ["css=.box-shadow-1:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(@href, '/en/shop/virtual-coins')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Coins')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9c68f3f2-84f3-4b4e-8409-a8130b96ebfe",
+    "name": "UserStoryTest14",
+    "commands": [{
+      "id": "4db14341-b384-4ace-8213-43055b8d22eb",
+      "comment": "Abrir a página",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65795ebd-b8f7-4b67-a82e-dd6ffdfd995f",
+      "comment": "definir o tamanho da página",
+      "command": "setWindowSize",
+      "target": "870x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45d05c18-d712-4d20-a0c5-027456fe87b1",
+      "comment": "Carregar no icone do menu",
+      "command": "click",
+      "target": "xpath=//span/button/span[3]",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//span/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cc11255-56be-4d37-9279-c76556d77574",
+      "comment": "Carregar na foto de perfil",
+      "command": "click",
+      "target": "css=.user-profile img",
+      "targets": [
+        ["css=.user-profile img", "css:finder"],
+        ["xpath=//img[@alt='avatar image']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccd7e440-16a0-4541-8fc9-7caff32e4f61",
+      "comment": "Carregar no botão de log out",
+      "command": "click",
+      "target": " xpath=//div[@id='mat-menu-panel-serverApp0']/div/button[2]/span/span",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-menu-item-text > span", "css:finder"],
+        ["xpath=//div[@id='mat-menu-panel-serverApp0']/div/button[2]/span/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "370ab0b4-f4b6-4fec-bde2-b82d28c3a5db",
+    "name": "UserStoryTest15",
+    "commands": [{
+      "id": "104367e8-7319-491d-a6b5-fc5ea073ffdc",
+      "comment": "Abrir a página",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10d50842-2585-4e70-8964-7b86880a8d86",
+      "comment": "Definir o tamanho da página",
+      "command": "setWindowSize",
+      "target": "870x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ccd540c-392f-460c-ab1d-6cd625ff62e8",
+      "comment": "Carregar no  icone do menu",
+      "command": "click",
+      "target": "xpath=//span/button/span[3]",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//span/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa02c8d6-0cb7-4f4c-a1d3-dc1af616f947",
+      "comment": "Carregar no ícone do histórico",
+      "command": "click",
+      "target": " xpath=//li[3]/a/span",
+      "targets": [
+        ["css=.cdk-focused > .hide-if-collapsed", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'History')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8cfc7dfd-9266-4313-8320-bfde07fecd66",
+    "name": "UserStoryTest16",
+    "commands": [{
+      "id": "bdb82ecc-ca15-4087-8a05-d0815937f384",
+      "comment": "Abrir a página",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fe73a0b-e615-4ce4-955f-a228c157436a",
+      "comment": "Definir o tamanho da janela",
+      "command": "setWindowSize",
+      "target": "870x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3b5bf62-0a1c-43c8-a791-cd32b96606e8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dac0fd5d-76b0-4882-a9c9-e1cdf26493c9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "160e0886-436c-4aa5-a2dc-8856fe953644",
+      "comment": "Carregar no botão see all para ver toda a daily leaderboard",
+      "command": "click",
+      "target": "linkText=See all",
+      "targets": [
+        ["linkText=See all", "linkText"],
+        ["css=.text-end > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'See all')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/t/SuYpb9qSF')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'See all')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34ed367-d74a-4c1f-8620-836a7bf70bdd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "67d09c59-8d4d-403a-adcb-cbd7dbc6e16a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://papergames.io/", "https://papergames.io/en/battleship"],
+  "plugins": []
+}
