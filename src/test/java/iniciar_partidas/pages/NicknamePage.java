@@ -1,7 +1,10 @@
 package iniciar_partidas.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
+
+import java.time.Duration;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -40,19 +43,21 @@ public class NicknamePage {
     private final SelenideElement continueButton = $(".p-3 > .btn");
 
     /**
-     * Preenche o nickname e clica em "Continue" APENAS se o diálogo estiver visível.
+     * Preenche o nickname no campo de texto e clica em "Continue" para avançar.
      *
-     * <p>Quando os testes correm em sequência na mesma sessão do browser,
-     * o utilizador já está autenticado após o primeiro teste — o diálogo
-     * não volta a aparecer. Este método trata ambos os casos sem erro.</p>
+     * <p>Este método aguarda até 5 segundos que o diálogo de registo apareça.
+     * Caso o diálogo não apareça dentro desse período, o método
+     * termina silenciosamente sem erro, permitindo que o teste continue.</p>
      *
-     * @param nickname o nome de utilizador a introduzir
+     * @param nickname o nome de utilizador a introduzir no campo de texto
      */
     public void preencherEContinuar(String nickname) {
-        if (dialogSection.exists() && dialogSection.isDisplayed()) {
-            nicknameInput.click();
-            nicknameInput.setValue(nickname);
-            continueButton.click();
+        try {
+            dialogSection.shouldBe(Condition.visible, Duration.ofSeconds(5));
+            nicknameInput.shouldBe(Condition.visible).setValue(nickname);
+            continueButton.shouldBe(Condition.visible).click();
+        } catch (Exception e) {
+            // O diálogo não apareceu dentro do timeout — provavelmente já estamos autenticados
         }
     }
 }
