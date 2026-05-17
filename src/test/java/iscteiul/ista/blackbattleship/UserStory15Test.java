@@ -93,7 +93,7 @@ public class UserStory15Test {
     @DisplayName("US15-T2: Navegação até à secção de histórico (History)")
     void testNavegacaoAteHistorico() {
         page.abrirPagina();
-     //   page.clicarMenuIcon();
+        //   page.clicarMenuIcon();
         page.clicarHistorico();
         assertTrue(
                 page.paginaHistoricoAberta(),

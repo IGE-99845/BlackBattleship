@@ -72,7 +72,7 @@ public class UserStory15 {
      *
      * <p>Localizador utilizado: {@code xpath=//span/button/span[3]}
      */
-  //  public void clicarMenuIcon() {
+    //  public void clicarMenuIcon() {
     //    driver.findElement(MENU_ICON).click();
     //}
 
