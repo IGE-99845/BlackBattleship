@@ -7,14 +7,12 @@
     <artifactId>BlackBattleship</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>BlackBattleship</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
         <junit.version>5.11.3</junit.version>
     </properties>
-
     <dependencies>
         <!-- Selenium -->
         <dependency>
@@ -27,7 +25,6 @@
             <artifactId>selenium-support</artifactId>
             <version>4.25.0</version>
         </dependency>
-
         <!-- Selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>
@@ -35,7 +32,6 @@
             <version>7.6.0</version>
             <scope>test</scope>
         </dependency>
-
         <!-- JUnit -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -49,7 +45,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
         <!-- Allure -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -63,8 +58,14 @@
             <version>2.29.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- AspectJ -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.22.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
